@@ -1,0 +1,28 @@
+package bluerov2;
+
+struct imu_t { 
+double time;
+// imu attitude - rpy
+double heading;
+double pitch;
+double roll;
+// imu attitude - quaternion
+double qw; 
+double qx; 
+double qy; 
+double qz; 
+// temp
+double temperature;
+// mag
+double mag_x; 
+double mag_y; 
+double mag_z; 
+// gyro
+double omega_x; 
+double omega_y; 
+double omega_z; 
+// accel
+double a_x; 
+double a_y; 
+double a_z; 
+}

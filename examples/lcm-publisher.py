@@ -100,7 +100,7 @@ while True:
 
     # Accelerometer data (in meters per second squared):
     #x,y,z = bno.read_accelerometer()
-    msg.ax, msg.ay, msg.az = bno.read_accelerometer()
+    msg.a_x, msg.a_y, msg.a_z = bno.read_accelerometer()
 
     # Linear acceleration data (i.e. acceleration from movement, not gravity--
     # returned in meters per second squared):
@@ -112,4 +112,4 @@ while True:
     lcm_node.publish("IMU",msg.encode())
 
     # Sleep for a second until the next reading.
-    time.sleep(1)
+    time.sleep(0.05)
